@@ -8,8 +8,17 @@ public class HealthSystem : MonoBehaviour
     [SerializeField]
     int life;
     
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("EnemyUp") || collision.gameObject.CompareTag("Enemyright") || collision.gameObject.CompareTag("BulletEnemy"))
+        {
+            RecibirDaño(collision.gameObject.GetComponent<Damage>().GetDamage());
+        }
+    }
+
+    private void RecibirDaño(int value)
+    {   
+        life -= value;
         if (life <= 0)
         {
             Destroy(this.gameObject);

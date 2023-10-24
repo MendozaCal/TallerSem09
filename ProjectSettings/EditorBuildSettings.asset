@@ -8,4 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/New Scene.unity
+    guid: 3086288bacf9e674480cc9b3cde7732f
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 581c43d57db04344e94c0113ca3da497
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: d79968ca08c194f4c8ee700d41906cb6
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

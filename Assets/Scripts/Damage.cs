@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Damage : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField]
+    private int Damagee;
+
+    public int GetDamage()
     {
-        
+        return Damagee;
     }
 }

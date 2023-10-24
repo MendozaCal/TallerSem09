@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private float speed;
     private Rigidbody2D rb2d;
+    int collectable;
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -21,4 +22,5 @@ public class PlayerMove : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         rb2d.velocity = new Vector2(horizontal, vertical) * speed;
     }
+
 }

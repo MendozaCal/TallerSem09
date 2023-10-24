@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 12655839}
   - component: {fileID: 12655843}
   - component: {fileID: 12655842}
+  - component: {fileID: 12655844}
+  - component: {fileID: 12655845}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: EnemyUp
@@ -295,6 +297,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &12655844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12655838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624d8edabcfad5c4bb8497b503a4cf7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6452993893765295822, guid: 4e70ae77b8f66284286b5ae8c9fe6b8d, type: 3}
+  shootDelayTime: 1
+--- !u!114 &12655845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12655838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640306ad6e1347a428e687f719d34599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 10
 --- !u!1 &427762161
 GameObject:
   m_ObjectHideFlags: 0

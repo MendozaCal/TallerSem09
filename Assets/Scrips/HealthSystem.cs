@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField]
-    int life;
+    
+    public int life;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {

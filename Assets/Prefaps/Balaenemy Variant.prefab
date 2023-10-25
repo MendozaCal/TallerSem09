@@ -16,13 +16,17 @@ PrefabInstance:
       propertyPath: direction.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1450230850180154896, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3332774952168131378, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
       propertyPath: m_Name
       value: Balaenemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3332774952168131378, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
       propertyPath: m_TagString
-      value: EnemyBullet
+      value: BulletEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 3363513635414823820, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,6 +66,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3363513635414823820, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485582048466744960, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

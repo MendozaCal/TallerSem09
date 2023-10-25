@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 using UnityEngine;
 
 public class MoveEnemy : MonoBehaviour
-{
+{   
     [SerializeField] private float tIMERRmOVE;
     private bool Movceenmy = true;
     public float sPEED = 2f;

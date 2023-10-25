@@ -21,7 +21,7 @@ public class HealthSystem : MonoBehaviour
         life -= value;
         if (life <= 0)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
             SceneManager.LoadScene(3);
         }
     }

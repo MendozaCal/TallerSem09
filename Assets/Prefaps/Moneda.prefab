@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2890311833177391197}
   - component: {fileID: 7343925088235857373}
   - component: {fileID: 885170233558921538}
-  - component: {fileID: -3063687487931267679}
+  - component: {fileID: 7805632830265166028}
   m_Layer: 0
   m_Name: Moneda
   m_TagString: Untagged
@@ -136,7 +136,7 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &-3063687487931267679
+--- !u!114 &7805632830265166028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,3 +148,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93521a88989db37448171dd7f3bf9d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: 10
+  puntaje: {fileID: 0}

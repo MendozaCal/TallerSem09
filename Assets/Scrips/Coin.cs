@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class Coin : MonoBehaviour
 {
-    int collectable = 0;
-    private void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] int points;
+    [SerializeField] Puntaje puntaje;
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            collectable++;
+            puntaje.MorePoints(points);
             Destroy(this.gameObject);
         }
     }

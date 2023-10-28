@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Puntaje : MonoBehaviour
 {
@@ -19,5 +21,9 @@ public class Puntaje : MonoBehaviour
     public void MorePoints(int newpoints)
     {
         points += newpoints;
+        if (points == 10)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }

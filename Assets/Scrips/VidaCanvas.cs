@@ -7,7 +7,6 @@ public class VidaCanvas : MonoBehaviour
 {
     int life;
     TextMeshProUGUI visualife;
-
     private void Start()
     {
         visualife = GetComponent<TextMeshProUGUI>();

@@ -935,6 +935,8 @@ GameObject:
   m_Component:
   - component: {fileID: 958126269}
   - component: {fileID: 958126268}
+  - component: {fileID: 958126273}
+  - component: {fileID: 958126274}
   - component: {fileID: 958126267}
   - component: {fileID: 958126270}
   - component: {fileID: 958126271}
@@ -958,7 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44710e4024a64f84e840c71c599e1960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tIMERRmOVE: 2
+  tIMERRmOVE: 0
   sPEED: 2
   Distancee: 5
 --- !u!212 &958126268
@@ -1114,6 +1116,34 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &958126273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958126266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5442fa0e5860d1a43a13fdd0762e9507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1131982145}
+  sPEED: 4
+--- !u!114 &958126274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958126266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624d8edabcfad5c4bb8497b503a4cf7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6452993893765295822, guid: 4e70ae77b8f66284286b5ae8c9fe6b8d, type: 3}
+  shootDelayTime: 1
 --- !u!1001 &1063043822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1450,7 +1480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 10
-  lifeText: {fileID: 0}
+  slidervida: {fileID: 0}
 --- !u!1001 &1133850878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1709,7 +1739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1759151637}
   - component: {fileID: 1759151636}
-  - component: {fileID: 1759151635}
+  - component: {fileID: 1759151641}
   - component: {fileID: 1759151638}
   - component: {fileID: 1759151640}
   - component: {fileID: 1759151639}
@@ -1720,20 +1750,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1759151635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1759151634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5442fa0e5860d1a43a13fdd0762e9507, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1131982145}
-  sPEED: 3
 --- !u!212 &1759151636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1887,6 +1903,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1759151641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759151634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44710e4024a64f84e840c71c599e1960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tIMERRmOVE: 2
+  sPEED: 2
+  Distancee: 20
 --- !u!4 &2127981041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2890311833177391197, guid: cf30622f01b836f48a39b3924125901f, type: 3}

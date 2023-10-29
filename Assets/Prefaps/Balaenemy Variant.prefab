@@ -13,8 +13,12 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4834193239499176312, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
-      propertyPath: direction.y
+      propertyPath: direction.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4834193239499176312, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
+      propertyPath: direction.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1450230850180154896, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
       propertyPath: m_Simulated
@@ -70,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7485582048466744960, guid: b0be5b611fd4d1e41a9f609d1ee2374b, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
